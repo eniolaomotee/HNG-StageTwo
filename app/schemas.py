@@ -5,8 +5,6 @@ from pydantic import BaseModel
 
 class PersonBaseSchema(BaseModel):
     name: str
-    # surname: str
-    # email: str | None = None
 
 
     class Config:
