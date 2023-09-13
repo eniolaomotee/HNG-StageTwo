@@ -1,6 +1,6 @@
-# PYTHON API Documentation
+# REST API Documentation
 
-This documentation outlines our Python application and explains the CRUD operation performed.The API is built using Python, SQLAlchemy, and SQLite and provides Create, Read, Update, and Delete (CRUD) operations.
+This documentation outlines our REST API and explains the CRUD operation performed.The API is built using Python, SQLAlchemy, and SQLite and provides Create, Read, Update, and Delete (CRUD) operations.
 
 ## Table of Contents
 
