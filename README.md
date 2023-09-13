@@ -7,7 +7,8 @@ This documentation outlines our REST API and explains the CRUD operation perform
 1. [Request and Response Formats](#request-and-response-formats)
 2. [Sample Usage](#sample-usage)
 3. [Setting Up Locally](#setting-up-locally)
-4.  [Limitations and Assumptions](#limitations-and-assumptions)
+4. [Limitations and Assumptions](#limitations-and-assumptions)
+5. [Deployment](#deployment)
 
 ---
 
@@ -149,3 +150,10 @@ Content-Type: application/json
 ## Limitations and Assumptions
 * The API assumes that the database schema is already set up correctly.
 * Authorization mechanisms are not covered but should be added for security in a real-world scenario.
+
+## Deployment
+* Configure environment variables for production settings as needed.
+* Ensure the database is configured and accessible in the production environment.
+  
+`This Documentation provides a structured and organized way to document your REST API, including request and response formats, sample usage, limitations, and setup instructions for both local and production environments.`
+
