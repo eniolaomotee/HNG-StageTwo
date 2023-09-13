@@ -1,6 +1,6 @@
-# CRUD API Documentation
+# PYTHON API Documentation
 
-This documentation outlines the usage of the CRUD API for managing "person" resources. The API is built using Python, SQLAlchemy, and SQLite and provides Create, Read, Update, and Delete (CRUD) operations.
+This documentation outlines our Python application and explains the CRUD operation performed.The API is built using Python, SQLAlchemy, and SQLite and provides Create, Read, Update, and Delete (CRUD) operations.
 
 ## Table of Contents
 
