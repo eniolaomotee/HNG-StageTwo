@@ -5,7 +5,9 @@ This documentation outlines our REST API and explains the CRUD operation perform
 ## Table of Contents
 
 1. [Request and Response Formats](#request-and-response-formats)
-2. [Setting Up Locally](#setting-up-locally)
+2. [Sample Usage](#sample-usage)
+3. [Setting Up Locally](#setting-up-locally)
+4.  [Limitations and Assumptions](#limitations-and-assumptions)
 
 ---
 
@@ -72,9 +74,78 @@ This documentation outlines our REST API and explains the CRUD operation perform
     "message": "Person with ID 1 has been deleted."
 }`
 
+
+## Sample Usage
+### Create a New Person
+**Request**
+```
+ POST /api
+Content-Type: application/json
+{
+    "name": "Eniola"
+}
+```
+**Response(Success)**
+```HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Eniola"
+}
+```
+
+### Retrieve Person Details
+**Request**
+`GET /api/1 `
+
+**Response(Success)**
+```HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Eniola",
+}
+```
+### Update Person Details
+**Request**
+```PUT /api/1
+Content-Type: application/json
+
+{
+    "name": "Updated Name",
+}
+```
+**Response(Success)**
+```HTTP/1.1 200 OK
+Content-Type: application/json
+{
+    "id": 1,
+    "name": "Updated Name",
+}
+```
+### Delete a Person
+**Request**
+`DELETE /api/1`
+
+**Response(Success)**
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+{
+    "message": "Person with ID 1 has been deleted."
+}
+```
+
+
 ## Setting Up Locally
 * Clone the repository from Github.
 * Navigate to the project directory in your computer and open it with your code editor.
 * Install the required dependencies using pip install -r requirements.txt.
 * Start the API with `uvicorn app.main:app --host localhost --port 8000 --reload `.
 * You can view it on swagger UI on `/docs`
+  
+## Limitations and Assumptions
+* The API assumes that the database schema is already set up correctly.
+* Authorization mechanisms are not covered but should be added for security in a real-world scenario.
